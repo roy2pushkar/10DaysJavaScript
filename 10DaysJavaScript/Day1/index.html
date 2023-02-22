@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day1js</title>
+  </head>
+  <body>
+    <button class="btn">Button 1</button>
+    <button class="btn">Button 2</button>
+    <button class="btn">Button 3</button>
+    <button class="btn">Button 4</button>
+
+    <div id="result"></div>
+
+    <script>
+      const buttons = document.querySelector(".btn");
+
+      for (const button of buttons) {
+        button.onclick = changeResult;
+      }
+
+      function changeResult() {
+        result.innerText = this.innerText;
+      }
+    </script>
+  </body>
+</html>
